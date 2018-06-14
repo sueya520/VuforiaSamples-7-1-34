@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/b_map">
+
+    <ImageView
+        android:layout_width="265dp"
+        android:layout_height="83dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/rectangle" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp" />
+
+    <com.vuforia.samples.VuforiaSamples.app.ImageTargets.ImageTouchView
+        android:id="@+id/offline_map"
+        android:layout_width="241dp"
+        android:layout_height="324dp"
+        android:layout_centerInParent="true"
+
+        android:scaleType="matrix" />
+
+    <ImageView
+        android:id="@+id/border_2f"
+        android:layout_width="wrap_content"
+        android:layout_height="372dp"
+        android:layout_centerInParent="true"
+         />
+
+    <ImageView
+        android:id="@+id/ju_mon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/liny"
+        android:layout_alignParentStart="true"
+         />
+
+    <LinearLayout
+        android:id="@+id/liny"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/menu_bar"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/menu_shine_1" />
+
+        <ImageView
+            android:id="@+id/btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/menu_ar_1"/>
+
+        <ImageView
+            android:id="@+id/btn3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/menu_bless_1"/>
+
+        <ImageView
+            android:id="@+id/btn4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/menu_traffic_1" />
+        <ImageView
+            android:id="@+id/btn5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/menu_map_2"/>
+    </LinearLayout>
+
+</RelativeLayout>

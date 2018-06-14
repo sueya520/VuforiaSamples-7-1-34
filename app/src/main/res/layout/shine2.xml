@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/b_index">
+
+
+    <TextView
+        android:id="@+id/bless_type_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:layout_weight="1"
+        android:text="歡迎回來" />
+
+    <TextView
+        android:id="@+id/bless_type_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="143dp"
+        android:layout_weight="1"
+        android:textColor="@color/white"
+        android:text="今天要來見哪位神明呢？" />
+
+    <Button
+        android:id="@+id/god1"
+        android:layout_width="45dp"
+        android:layout_height="180dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginLeft="27dp"
+        android:layout_weight="1"
+        android:background="@drawable/g1"/>
+
+    <Button
+        android:id="@+id/god2"
+        android:layout_width="45dp"
+        android:layout_height="180dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_weight="1"
+        android:background="@drawable/g2" />
+
+    <Button
+        android:id="@+id/god3"
+        android:layout_width="45dp"
+        android:layout_height="180dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="133dp"
+        android:layout_marginLeft="133dp"
+        android:layout_weight="1"
+        android:background="@drawable/g3" />
+
+    <Button
+        android:id="@+id/god4"
+        android:layout_width="45dp"
+        android:layout_height="180dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="72dp"
+        android:layout_marginRight="72dp"
+        android:layout_weight="1"
+        android:background="@drawable/g4" />
+
+    <Button
+        android:id="@+id/god5"
+        android:layout_width="45dp"
+        android:layout_height="180dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="127dp"
+        android:layout_marginRight="127dp"
+        android:layout_weight="1"
+        android:background="@drawable/g5" />
+
+    <Button
+        android:id="@+id/god6"
+        android:layout_width="45dp"
+        android:layout_height="180dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/g6"/>
+
+
+</RelativeLayout>

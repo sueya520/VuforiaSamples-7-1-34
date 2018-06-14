@@ -1,0 +1,75 @@
+apply plugin: 'com.android.application'
+
+
+def VUFORIA_SDK_DIR = '../../..'
+def NATIVE_LIB_DIR = 'build/lib'
+def JAR_DIR = 'build/java/vuforia'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion '27.0.3'
+
+    sourceSets.main {
+        jni.srcDirs = []
+        jniLibs.srcDir "$VUFORIA_SDK_DIR/$NATIVE_LIB_DIR/"
+    }
+
+    defaultConfig {
+        applicationId "com.vuforia.samples.VuforiaSamples"
+        minSdkVersion 17
+        targetSdkVersion 27
+        versionCode 700
+        versionName "7.0"
+    }
+
+    archivesBaseName = rootProject.projectDir.getName()
+
+    // Ensure that Vuforia datasets placed in the assets folder do not get compressed as
+    // this can significantly increase their loading time
+    aaptOptions {
+        noCompress 'dat'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+        debug {
+            minifyEnabled false
+            debuggable true
+        }
+    }
+}
+
+dependencies {
+    implementation 'com.google.android.gms:play-services-maps:15.0.0'
+    //implementation 'com.android.support:appcompat-v7:26.1.0'
+    compile files("$VUFORIA_SDK_DIR/$JAR_DIR/Vuforia.jar")
+
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.android.support:appcompat-v7:27.0.2'
+    //implementation 'com.google.android.gms:play-services-maps:12.0.1'
+    implementation 'com.android.support:support-v4:27.0.2'
+    // Needed for the LiteListDemo
+    implementation "com.android.support:recyclerview-v7:27.0.2"
+
+    implementation 'com.facebook.android:facebook-android-sdk:[4,5)'
+    compile 'com.facebook.android:facebook-share:[4,5)'
+    compile "com.android.support:customtabs:27.0.0"
+    compile(name:'line-sdk-4.0.8', ext:'aar')
+    //compile files('libs/line-sdk-4.0.8.aar')
+    compile files("libs/jpct_ae.jar")
+}
+
+repositories {
+    maven {
+        url "https://maven.google.com"
+        mavenCentral()
+    }
+    flatDir {
+        dirs 'libs'
+    }
+    jcenter()
+    maven { url "https://jitpack.io" }
+}

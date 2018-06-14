@@ -1,0 +1,43 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/terrytsai/Downloads/AR_MODEL/VuforiaSamples-7-1-34/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-xxhdpi-v4/values-xxhdpi-v4.xml",
+            "map": [
+                {
+                    "source": "/Users/terrytsai/Downloads/AR_MODEL/VuforiaSamples-7-1-34/app/src/main/res/values-xxhdpi/google_maps_api.xml",
+                    "from": {
+                        "startLines": "22",
+                        "startColumns": "4",
+                        "startOffsets": "897",
+                        "endColumns": "137",
+                        "endOffsets": "1030"
+                    },
+                    "to": {
+                        "startLines": "4",
+                        "startColumns": "4",
+                        "startOffsets": "152",
+                        "endColumns": "137",
+                        "endOffsets": "285"
+                    }
+                },
+                {
+                    "source": "/Users/terrytsai/Downloads/AR_MODEL/VuforiaSamples-7-1-34/app/src/main/res/values-xxhdpi/dimens.xml",
+                    "from": {
+                        "startLines": "3,4",
+                        "startColumns": "4,4",
+                        "startOffsets": "56,104",
+                        "endColumns": "47,48",
+                        "endOffsets": "99,148"
+                    },
+                    "to": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,103",
+                        "endColumns": "47,48",
+                        "endOffsets": "98,147"
+                    }
+                }
+            ]
+        }
+    ]
+}
